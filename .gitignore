@@ -19,6 +19,7 @@ build.xml
 proguard-project.txt
 *~
 project.properties
+.classpath
 
 # External tool builders
 .externalToolBuilders/
