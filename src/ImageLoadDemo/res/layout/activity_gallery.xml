@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" >
+
+        <com.example.imageload.CommonGallery
+            android:id="@+id/iamge_gallery_activity_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:animationDuration="0"
+            android:fadingEdge="none"
+            android:gravity="fill"
+            android:spacing="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/image_gallery_activity_linearlayout_info"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/image_gallery_activity_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:progress="80" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/image_gallery_activity_textview_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/image_gallery_activity_textview_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/image_gallery_activity_title_bar"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top" >
+
+        <ImageButton
+            android:id="@+id/image_gallery_activity_title_bar_left_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/image_gallery_activity_title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</FrameLayout>
